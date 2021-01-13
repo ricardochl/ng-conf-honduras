@@ -18,8 +18,9 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "ngx-build-plus:browser",
           "options": {
+            "extraWebpackConfig": "webpack.config.js",
             "outputPath": "dist/ng-conf-honduras",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -66,8 +67,9 @@
           }
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "ngx-build-plus:dev-server",
           "options": {
+            "extraWebpackConfig": "webpack.config.js",
             "browserTarget": "ng-conf-honduras:build"
           },
           "configurations": {
@@ -83,8 +85,9 @@
           }
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "builder": "ngx-build-plus:karma",
           "options": {
+            "extraWebpackConfig": "webpack.config.js",
             "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
@@ -127,5 +130,8 @@
       }
     }
   },
-  "defaultProject": "ng-conf-honduras"
+  "defaultProject": "ng-conf-honduras",
+  "cli": {
+    "analytics": "738f54f0-21dc-4007-ae99-c6b22f44bfb5"
+  }
 }
