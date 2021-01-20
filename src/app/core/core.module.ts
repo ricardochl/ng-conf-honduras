@@ -5,10 +5,11 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { MainLayoutComponent } from './layout/main-layout/main-layout.component';
 import { RouterModule } from '@angular/router';
+import { NabvarComponent } from './layout/nabvar/nabvar.component';
 
 
 @NgModule({
-  declarations: [FooterComponent, HeaderComponent, MainLayoutComponent],
+  declarations: [FooterComponent, HeaderComponent, MainLayoutComponent, NabvarComponent],
   imports: [
     BrowserModule,
     RouterModule
