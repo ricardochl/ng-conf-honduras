@@ -6,13 +6,14 @@ import { HeaderComponent } from './layout/header/header.component';
 import { MainLayoutComponent } from './layout/main-layout/main-layout.component';
 import { RouterModule } from '@angular/router';
 import { NabvarComponent } from './layout/nabvar/nabvar.component';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [FooterComponent, HeaderComponent, MainLayoutComponent, NabvarComponent],
   imports: [
     BrowserModule,
-    RouterModule
+    RouterModule,
+    FontAwesomeModule
   ]
 })
 export class CoreModule { }

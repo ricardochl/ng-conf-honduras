@@ -26,6 +26,7 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+      blueGray: colors.blueGray
 
 
     },
@@ -135,7 +136,9 @@ module.exports = {
       inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
       none: 'none',
     },
-    container: {},
+    container: {
+      padding: '2rem',
+    },
     cursor: {
       auto: 'auto',
       default: 'default',
@@ -165,6 +168,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        'Montserrat',
         'Roboto',
         'ui-sans-serif',
         'system-ui',
