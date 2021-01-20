@@ -10,11 +10,21 @@ import { TeamComponent } from './pages/team/team.component';
 import { TeamMemberComponent } from './components/team-member/team-member.component';
 import { SpeakerCardComponent } from './components/speaker-card/speaker-card.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AboutComponent } from './components/about/about.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { PlatinumSponsorsComponent } from './components/platinum-sponsors/platinum-sponsors.component';
+import { GoldSponsorsComponent } from './components/gold-sponsors/gold-sponsors.component';
+import { SilverSponsorsComponent } from './components/silver-sponsors/silver-sponsors.component';
+import { PricingComponent } from './components/pricing/pricing.component';
 
 
 @NgModule({
   declarations: [SpeakersComponent, SponsorsComponent, HomeComponent,
-    HeroHeaderComponent, TeamComponent, TeamMemberComponent, SpeakerCardComponent],
+    HeroHeaderComponent, TeamComponent, TeamMemberComponent, SpeakerCardComponent, GalleryComponent, AboutComponent,
+    PlatinumSponsorsComponent,
+    GoldSponsorsComponent,
+    SilverSponsorsComponent,
+    PricingComponent],
   imports: [
     CommonModule,
     ViewsRoutingModule,
