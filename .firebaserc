@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "ng-conf-honduras-2021"
+  },
+  "targets": {
+    "ng-conf-honduras-2021": {
+      "hosting": {
+        "ng-conf-honduras": [
+          "ng-conf-honduras-2021"
+        ]
+      }
+    }
   }
 }

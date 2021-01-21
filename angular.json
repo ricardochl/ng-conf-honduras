@@ -127,6 +127,10 @@
               "devServerTarget": "ng-conf-honduras:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }
