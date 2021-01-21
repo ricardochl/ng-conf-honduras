@@ -1,23 +1,30 @@
 <section>
   <div class="container mt-8 mx-auto flex flex-col justify-center">
-    <h1 class="font-semibold text-3xl text-center">Nuestros Patrocinadores</h1>
-    <div class="flex justify-between mt-8">
-      <div>
-        <h2 class="font-normal text-blueGray-900 text-xl">Silver</h2>
-        <div class="flex flex-col">
-          <app-silver-sponsors></app-silver-sponsors>
-        </div>
+    <h1 class="font-semibold text-3xl text-center">Our Sponsors</h1>
+    <div class="flex gap-8 flex-col justify-between mt-8">
+
+     <div *ngIf="sponsors.platinum != null">
+        <h2 class="font-normal text-blueGray-900 text-2xl">Platinum</h2>
+        <app-platinum-sponsors [sponsors]="sponsors.platinum"></app-platinum-sponsors>
       </div>
 
-      <div>
-        <h2 class="font-normal text-blueGray-900 text-3xl">Platinum</h2>
-        <app-platinum-sponsors></app-platinum-sponsors>
+
+      <div *ngIf="sponsors.gold != null">
+        <h2 class="font-normal text-blueGray-900 text-2xl">Gold</h2>
+        <app-gold-sponsors [sponsors]="sponsors.gold"></app-gold-sponsors>
       </div>
 
-      <div>
-        <h2 class="font-normal text-blueGray-900 text-xl">Gold</h2>
-        <app-gold-sponsors></app-gold-sponsors>
+      <div *ngIf="sponsors.silver != null">
+        <h2 class="font-normal text-blueGray-900 text-2xl">Silver</h2>
+          <app-silver-sponsors [sponsors]="sponsors.silver"></app-silver-sponsors>
       </div>
+
+      <div *ngIf="sponsors.bronze != null">
+        <h2 class="font-normal text-blueGray-900 text-2xl">Bronze</h2>
+          <app-bronze-sponsors [sponsors]="sponsors.bronze"></app-bronze-sponsors>
+      </div>
+
+
 
       <!-- <div>
           <h2 class="text-xl">Bronze</h2>

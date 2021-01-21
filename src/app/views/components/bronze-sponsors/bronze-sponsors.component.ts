@@ -2,11 +2,11 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ISponsor } from 'src/app/core/models/sponsor.interface';
 
 @Component({
-  selector: 'app-platinum-sponsors',
-  templateUrl: './platinum-sponsors.component.html',
-  styleUrls: ['./platinum-sponsors.component.scss']
+  selector: 'app-bronze-sponsors',
+  templateUrl: './bronze-sponsors.component.html',
+  styleUrls: ['./bronze-sponsors.component.scss']
 })
-export class PlatinumSponsorsComponent implements OnInit {
+export class BronzeSponsorsComponent implements OnInit {
 
   @Input() sponsors: ISponsor[];
   constructor() { }

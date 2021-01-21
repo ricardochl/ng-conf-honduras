@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ISponsor } from 'src/app/core/models/sponsor.interface';
 
 @Component({
   selector: 'app-gold-sponsors',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GoldSponsorsComponent implements OnInit {
 
+  @Input() sponsors: ISponsor[];
   constructor() { }
 
   ngOnInit(): void {

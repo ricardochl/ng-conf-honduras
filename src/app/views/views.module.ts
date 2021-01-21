@@ -16,6 +16,7 @@ import { PlatinumSponsorsComponent } from './components/platinum-sponsors/platin
 import { GoldSponsorsComponent } from './components/gold-sponsors/gold-sponsors.component';
 import { SilverSponsorsComponent } from './components/silver-sponsors/silver-sponsors.component';
 import { PricingComponent } from './components/pricing/pricing.component';
+import { BronzeSponsorsComponent } from './components/bronze-sponsors/bronze-sponsors.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { PricingComponent } from './components/pricing/pricing.component';
     PlatinumSponsorsComponent,
     GoldSponsorsComponent,
     SilverSponsorsComponent,
-    PricingComponent],
+    PricingComponent,
+    BronzeSponsorsComponent],
   imports: [
     CommonModule,
     ViewsRoutingModule,
