@@ -20,7 +20,7 @@
       ]
     },
     {
-      "target": "ng-conf-honduras",
+      "target": "ng-conf-honduras-2021",
       "public": "dist/ng-conf-honduras",
       "ignore": [
         "**/.*"
