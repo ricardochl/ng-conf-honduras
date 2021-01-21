@@ -5,7 +5,7 @@
   },
   "hosting": [
     {
-      "target": "app" ,
+      "target": "ng-conf-honduras-2021" ,
       "public": "./dist/ng-conf-honduras",
       "ignore": [
         "firebase.json",
