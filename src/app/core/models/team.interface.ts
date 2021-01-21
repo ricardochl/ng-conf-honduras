@@ -5,5 +5,5 @@ export interface ITeam{
   photoUrl: string;
   socials: any;
   title: string;
-  description: string;
+  shortBio: string;
 }
