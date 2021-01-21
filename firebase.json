@@ -5,6 +5,7 @@
   },
   "hosting": [
     {
+      "target": "app" ,
       "public": "./dist/ng-conf-honduras",
       "ignore": [
         "firebase.json",
