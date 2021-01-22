@@ -1,7 +1,9 @@
 <app-hero-header></app-hero-header>
 <app-about></app-about>
  <!-- <app-pricing></app-pricing> -->
-<ng-container *ngIf="(sponsors$ | async) as sponsors">
-  <app-sponsors [sponsors]='sponsors'></app-sponsors>
+<ng-container *ngIf="(data$ | async) as data">
+  <app-tickets [tickets]='data[1]'></app-tickets>
+  <app-sponsors [sponsors]='data[0]'></app-sponsors>
 </ng-container>
+
 <!--<app-gallery></app-gallery> -->

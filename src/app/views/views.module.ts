@@ -17,6 +17,9 @@ import { GoldSponsorsComponent } from './components/gold-sponsors/gold-sponsors.
 import { SilverSponsorsComponent } from './components/silver-sponsors/silver-sponsors.component';
 import { PricingComponent } from './components/pricing/pricing.component';
 import { BronzeSponsorsComponent } from './components/bronze-sponsors/bronze-sponsors.component';
+import { TicketsComponent } from './components/tickets/tickets.component';
+import { TicketCardComponent } from './components/ticket-card/ticket-card.component';
+import { TicketMostPopularCardComponent } from './components/ticket-most-popular-card/ticket-most-popular-card.component';
 
 
 @NgModule({
@@ -26,7 +29,10 @@ import { BronzeSponsorsComponent } from './components/bronze-sponsors/bronze-spo
     GoldSponsorsComponent,
     SilverSponsorsComponent,
     PricingComponent,
-    BronzeSponsorsComponent],
+    BronzeSponsorsComponent,
+    TicketsComponent,
+    TicketCardComponent,
+    TicketMostPopularCardComponent],
   imports: [
     CommonModule,
     ViewsRoutingModule,
