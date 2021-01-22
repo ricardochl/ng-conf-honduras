@@ -9,8 +9,31 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Noscript content for added SEO -->
+  <noscript><a href="https://www.eventbrite.es/e/entradas-ng-conf-honduras-2021-137886914473" rel="noopener noreferrer" target="_blank"></noscript>
+    <!-- You can customize this button any way you like -->
 </head>
 <body>
   <app-root></app-root>
+
+
+
+  <noscript></a>Buy Tickets on Eventbrite</noscript>
+
+  <script src="https://www.eventbrite.es/static/widgets/eb_widgets.js"></script>
+
+  <script type="text/javascript">
+      var exampleCallback = function() {
+          console.log('Order complete!');
+      };
+
+      window.EBWidgets.createWidget({
+          widgetType: 'checkout',
+          eventId: '137886914473',
+          modal: true,
+          modalTriggerElementId: 'eventbrite-widget-modal-trigger-137886914473',
+          onOrderComplete: exampleCallback
+      });
+  </script>
 </body>
 </html>
