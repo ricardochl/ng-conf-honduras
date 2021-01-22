@@ -12,7 +12,7 @@ export class TeamService {
   constructor(private afs: AngularFirestore) { }
 
 
-  getTickets(): Observable<ITeam[]>{
+  getTeam(): Observable<ITeam[]>{
     return this.afs.collection('team', ref =>   ref.where('active', '==', true).orderBy('order'))
     .valueChanges().pipe(
       map(docs => docs as ITeam[])
