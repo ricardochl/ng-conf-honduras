@@ -1,12 +1,11 @@
 <div class="flex flex-row">
-  <div class="mt-5">
-    <ng-container *ngFor="let sponsor of sponsors">
+  <ng-container *ngFor="let sponsor of sponsors">
+    <div class="mt-5">
       <a [href]="sponsor.websiteUrl" target="_blank">
-      <div class="rounded shadow p-2">
-        <img class="w-80"
-        [src]="sponsor.logoUrl" alt="Gold Sponsor">
-      </div>
+        <div class="rounded shadow p-2">
+          <img class="w-80" [src]="sponsor.logoUrl" alt="Gold Sponsor" />
+        </div>
       </a>
-    </ng-container>
-
+    </div>
+  </ng-container>
 </div>
