@@ -12,7 +12,6 @@ export class TicketsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.tickets);
   }
 
 }

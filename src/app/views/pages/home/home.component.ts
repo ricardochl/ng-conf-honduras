@@ -3,7 +3,8 @@ import { ISponsor } from './../../../core/models/sponsor.interface';
 import { Observable, combineLatest } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { SponsorsService } from 'src/app/core/services/sponsors.service';
-import * as _ from 'lodash';
+import { groupBy } from 'lodash-es';
+
 import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-home',
@@ -20,7 +21,7 @@ export class HomeComponent implements OnInit {
   ) {
     this.sponsors$ = this.sponsorsService
       .getSponsors()
-      .pipe(map((data) => _.groupBy(data, 'sponsorshipPlan')));
+      .pipe(map((data) => groupBy(data, 'sponsorshipPlan')));
   }
 
   ngOnInit(): void {

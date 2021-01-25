@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:prod": "NODE_ENV=production ng build --prod"
+    "build:prod": "NODE_ENV=production ng build --prod",
+    "start-pwa": "ng build --prod && http-server -p 8080 -c-1 dist/ng-conf-honduras"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +22,7 @@
     "@angular/platform-browser": "~11.0.6",
     "@angular/platform-browser-dynamic": "~11.0.6",
     "@angular/router": "~11.0.6",
+    "@angular/service-worker": "~11.0.6",
     "@fortawesome/angular-fontawesome": "^0.8.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
@@ -28,7 +30,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "firebase": "^7.0 || ^8.0",
     "font-awesome": "^4.7.0",
-    "lodash": "^4.17.20",
+    "lodash-es": "^4.17.20",
     "ngx-build-plus": "^11.0.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
@@ -40,7 +42,7 @@
     "@angular/cli": "~11.0.6",
     "@angular/compiler-cli": "~11.0.6",
     "@types/jasmine": "~3.6.0",
-    "@types/lodash": "^4.14.168",
+    "@types/lodash-es": "^4.17.4",
     "@types/node": "^12.11.1",
     "autoprefixer": "^10.2.1",
     "codelyzer": "^6.0.0",
