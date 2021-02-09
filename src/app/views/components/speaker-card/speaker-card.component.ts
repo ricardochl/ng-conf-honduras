@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { ISpeaker } from './../../../core/models/speaker.interface';
+import { Component, Input, OnInit } from '@angular/core';
 import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 
@@ -10,7 +11,10 @@ import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 export class SpeakerCardComponent implements OnInit {
   public faTwitter = faTwitter;
   public faGithub = faGithub;
-  constructor() { }
+
+  @Input() speaker: ISpeaker;
+  constructor() {
+   }
 
   ngOnInit(): void {
   }
